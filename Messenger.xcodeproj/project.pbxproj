@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		4F813976264B9ED20027394E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F813975264B9ED20027394E /* AppDelegate.swift */; };
 		4F813978264B9ED20027394E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F813977264B9ED20027394E /* SceneDelegate.swift */; };
 		4F81397A264B9ED20027394E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F813979264B9ED20027394E /* ViewController.swift */; };
-		4F81397D264B9ED20027394E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F81397B264B9ED20027394E /* Main.storyboard */; };
 		4F81397F264B9ED40027394E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F81397E264B9ED40027394E /* Assets.xcassets */; };
 		4F813982264B9ED40027394E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F813980264B9ED40027394E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -23,7 +22,6 @@
 		4F813975264B9ED20027394E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F813977264B9ED20027394E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F813979264B9ED20027394E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F81397C264B9ED20027394E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F81397E264B9ED40027394E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F813981264B9ED40027394E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F813983264B9ED40027394E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				4F813975264B9ED20027394E /* AppDelegate.swift */,
 				4F813977264B9ED20027394E /* SceneDelegate.swift */,
 				4F813979264B9ED20027394E /* ViewController.swift */,
-				4F81397B264B9ED20027394E /* Main.storyboard */,
 				4F81397E264B9ED40027394E /* Assets.xcassets */,
 				4F813980264B9ED40027394E /* LaunchScreen.storyboard */,
 				4F813983264B9ED40027394E /* Info.plist */,
@@ -88,7 +85,6 @@
 				30D183F1BB614D1734A1839A /* Pods-Messenger.debug.xcconfig */,
 				05981FC867F03FD5A1896F94 /* Pods-Messenger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +149,6 @@
 			files = (
 				4F813982264B9ED40027394E /* LaunchScreen.storyboard in Resources */,
 				4F81397F264B9ED40027394E /* Assets.xcassets in Resources */,
-				4F81397D264B9ED20027394E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,14 +210,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4F81397B264B9ED20027394E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F81397C264B9ED20027394E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F813980264B9ED40027394E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y7649QBWA;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aturan23.Messenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y7649QBWA;
 				INFOPLIST_FILE = Messenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aturan23.Messenger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
